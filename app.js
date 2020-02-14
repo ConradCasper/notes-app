@@ -1,11 +1,13 @@
-const validator = require('validator')
+const chalk = require('chalk')
 const getNotes = require('./notes')
+const log = console.log
 
 
-console.log(getNotes())
+log(getNotes())
+log(chalk.green('Success!'))
 
 
-console.log(validator.isEmail('example.com'))
+
 
 
 
