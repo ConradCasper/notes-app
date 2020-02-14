@@ -1,5 +1,4 @@
-const fs = require('fs');
+const firstName = require('./utils')
 
-fs.writeFileSync('notes.txt', 'My name is Conrad. ')
+console.log(firstName)
 
-fs.appendFileSync('notes.txt', 'Hi, nice to meet you, Conrad. My name is CatDog.')
