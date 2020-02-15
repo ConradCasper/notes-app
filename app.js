@@ -4,7 +4,7 @@ const log = console.log
 
 
 log(getNotes())
-log(chalk.green('Success!'))
+log(chalk.blue('Nice!'))
 
 
 
