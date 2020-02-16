@@ -36,6 +36,15 @@ yargs.command({
     }
 })
 
+// Create list command
+yargs.command({
+    command: 'list',
+    describe: 'List the notes',
+    handler: function(){
+        log("List of notes")
+    }
+})
+
 // add, remove, read, list
 
 log(yargs.argv)
