@@ -6,7 +6,8 @@ const log = console.log
 
 
 
-log(process.argv)
+// customize yargs version
+yargs.version('1.1.0')
 log(yargs.argv)
 
 
