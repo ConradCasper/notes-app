@@ -27,6 +27,15 @@ yargs.command({
     }
 })
 
+// Create read command
+yargs.command({
+    command: 'read',
+    describe: 'Read a note',
+    handler: function(){
+        log("Reading a note")
+    }
+})
+
 // add, remove, read, list
 
 log(yargs.argv)
