@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const yargs = require('yargs')
-const getNotes = require('./notes')
+const notes = require('./notes')
 
 const log = console.log
 
@@ -26,8 +26,7 @@ yargs.command({
         }
     },
     handler: function(argv){
-        log(`Title: ${argv.title}`)
-        log(`Body: ${argv.body}`)
+        notes.addNote(argv.title, argv.body)
     }
 })
 
