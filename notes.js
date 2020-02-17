@@ -25,7 +25,12 @@ const addNote = (title, body) => {
 }
 
 const removeNote = (title) => {
-    log(title)
+    const oldNotes = loadNotes()
+    const newNotes = oldNotes.filter( note => {
+        return note.title !== title
+    } )
+
+    saveNotes(newNotes)
 }
 
 const saveNotes = (notes) => {
