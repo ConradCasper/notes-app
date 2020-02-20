@@ -27,9 +27,7 @@ const removeNote = (title) => {
     const oldNotes = loadNotes()
 
 
-    const newNotes = oldNotes.filter( note => {
-        return note.title !== title
-    } )
+    const newNotes = oldNotes.filter( note => note.title !== title )
 
     if(oldNotes.length === newNotes.length){
         log(chalk.red("No note found!"))
